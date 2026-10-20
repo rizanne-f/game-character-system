@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Game Character System</title>
+</head>
+<body>
+  <main>
+    <h1>Character Creation</h1>
+    <div class="container">
+      <div class="character-setup">
+        <div class="name">
+          <label for="character">Select character: </label>
+          <select name="character" id="character">
+            <option value="Frieren" selected>Frieren</option>
+            <option value="Fern">Fern</option>
+            <option value="Flamme">Flamme</option>
+          </select>
+        </div>
+  
+        <div class="mana">
+          <label for="mana">Mana: </label>
+          <div>
+            <input type="range" id="mana" min="0" max="100" step="10" value="100" disabled>
+            <span id="mana-value">100</span>
+          </div>
+        </div>
+  
+        <button type="button">Create</button>
+      </div>
+      
+      <div class="character-screen">
+        <div>
+          <h2>Character</h2>
+          <p><strong>Health</strong>: <span id="healthVal"></span></p>
+          <p><strong>Mana</strong>: <span id="manaVal"></span></p>
+        </div>
+        <img src="" id="character-img">
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
